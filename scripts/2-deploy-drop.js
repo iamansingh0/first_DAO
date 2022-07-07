@@ -8,9 +8,6 @@ import { readFileSync } from "fs";
       name: "FundDAO Membership",
       description: "A DAO for the kind funders all around the globe.",
       image: readFileSync("scripts/assets/fund.png"),
-      // We need to pass in the address of the person who will be receiving the proceeds from sales of nfts in the contract.
-      // We're planning on not charging people for the drop, so we'll pass in the 0x0 address
-      // you can set this to your own wallet address if you want to charge for the drop.
       primary_sale_recipient: AddressZero,
     });
 
