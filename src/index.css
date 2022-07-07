@@ -4,9 +4,10 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-color: #090a0a;
   color: #fff;
   overflow-x: hidden;
+  max-height: 100vh;
 }
 #root {
   min-height: 100vh;
@@ -52,22 +53,29 @@ h1 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin: auto;
-  align-content: center;
+  align-content:flex-start;
   display: flex;
   text-align: center;
+  max-height: 100vh;
 }
 
 .member-page > div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  text-align: left;
+  text-align: center;
   gap: 2rem;
+}
+
+.member-page .qsn {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .member-page > div > div {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   gap: 1rem;
 }
 @media screen and (max-width: 768px) {
@@ -93,13 +101,13 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  color: #050606;
 }
 
 .member-page form .card > div {
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .member-page form small {
@@ -107,28 +115,30 @@ h1 {
 }
 
 .card {
-  background-color: #fff;
-  padding: 1rem;
+  background-color: rgb(226, 226, 226);
+  padding: 1.5rem;
   border-radius: 1rem;
-  color: #000;
-  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
+  color: rgb(6, 54, 54);
+  box-shadow: 3.1px 6.2px 6.2px rgba(215, 15, 15, 0.4);
+  font-weight: 600;
 }
 
 button {
   cursor: pointer;
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(14, 190, 239);
+  color: black;
   border: none;
   font-weight: bold;
   font-family: inherit;
   padding: 1.2rem 2rem;
   text-transform: uppercase;
-  border-radius: 3rem;
+  border-radius: 1rem;
   font-size: 1.2rem;
 }
 
 button:hover {
-  background-color: #121212;
+  background-color: rgb(226, 226, 226);
+  color: black;
 }
 
 button:focus {
